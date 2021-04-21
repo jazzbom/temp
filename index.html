@@ -22,14 +22,10 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Blockchain Systems - An Investment Management Platform For Blockchain Based Funds</title>
-    <meta name="description" content="Our Blockchain leveraged technology solutions will help regulated financial entities to manage
-                	and setup investment products in a transparent, legal - KYC and AML, fully auditable and openly 
-                	verifiable platform.">
+    <title>ESC256 - A Software Consultancy</title>
+    <meta name="description" content="Solving critical business problems using cost-effective tech solutions">
     <meta name="author" content="ESC256">
-    <meta name="keywords" content="Blockchain fund, investment blockchain, decentralised hedge fund, blockchain based fund, DeFi fund, decentralised fund,
-				   blockchain investment platform, investment management platform on blockchain,
-				   decentralised investment management platform, blockchain-fund">
+    <meta name="keywords" content="create software, blockchain software, smart contract, JAVA, CICD, Fullstack developer, hire software engineer">
 
     <!-- mobile specific metas
     ================================================== -->
@@ -51,6 +47,50 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+	(function() {
+	emailjs.init("user_uSEzg1BFdsysyu6iVSQk8");
+	})();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+        
+            // Get the modal
+		var modal = document.getElementById("myModal");
+
+            	// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+            	
+            	// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		  if (event.target == modal) {
+		    modal.style.display = "none";
+		  }
+		}
+        
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_wcvm1zk', 'template_3a5yjhv', this, 'user_uSEzg1BFdsysyu6iVSQk8')
+                    .then(function() {
+                        console.log('SUCCESS!');
+                        modal.style.display = "block";
+                    }, function(error) {
+                        alert('Failed to send email as our email service is not responding. Please contact us directly with the provided email address. ', error);
+                    });
+            });
+        }
+    </script>
+    
 </head>
 
 <body id="top">
@@ -78,8 +118,7 @@
                     <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
                 </ul>
     
-                <p>We are a startup located on the British mainland in the heart of Birmingham city. We focus on building alternative 
-                and worthwhile technological solutions by leveraging Blockchain to solve your day to day business problems.
+                <p>We are located on the British mainland in the heart of Birmingham city. We focus on building worthwhile technological solutions by leveraging the latest tech stack incl. blockchain to solve your day to day business problems.
             </p>
     			<!-- 
     				
@@ -118,9 +157,11 @@
 
             <div class="row home-content__main">
                 <h1>
-                    Solving critical business problems<br>
-                    using cost-effective Blockchain solutions.<br>
+                    Solving critical business problems using cost-effective tech solutions.<br>
                 </h1>
+                <h3>
+                Our contractor service falls safely outside the IR35 tax legislation and is a U.K. based company
+                </h3>
 
                 <div class="home-content__buttons">
                     <a href="#contact" class="smoothscroll btn btn--stroke">
@@ -164,32 +205,21 @@
     ================================================== -->
     <section id='about' class="s-about">
 
-        <div class="row section-header has-bottom-sep" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead subhead--dark">Hello There</h3>
-                <h1 class="display-1 display-1--light">We Are <img src="images/logo.png" alt="Esc256" style="max-width: 80%;"> Blockchain Systems</h1>
-            </div>
-        </div> <!-- end section-header -->
-
         <div class="row about-desc" data-aos="fade-up">
             <div class="col-full">
-                <p>
-                	Our Blockchain leveraged technology solutions will help regulated financial entities to manage
-                	and setup investment products in a transparent, legal (KYC & AML), fully auditable and openly 
-                	verifiable platform.
+                <h1>
+                	We listen and collaborate to create a genuinely unique experience.
               
-                </p>
+                </h1>
                 <p>
-                	Our latest product under construction, Hexorr Investment Management Platform integrates with 
-                	the largest and most well-established, open-ended decentralised Blockchain known 
-                	as Ethereum via smart contracts.
+                	We design, build and support existing enterprise-grade systems running on Java for clients worldwide.
                 </p>
+                
                 <p>
-                 <div class="buttons">
-	                <a href="/hexorrIM.html" class="btn btn--stroke-readme">
-	                        HEXORR IM
-	                </a>
-                 </div>
+                
+                <b>Our contractor rates are:</b>
+&#163;410 - &#163;600/day for two Fullstack Developers (remote work). Each project will be assigned two engineers working in pair. Our highly competitive pricing means your product is built at x2 the speed for the price of one engineer.
+                
                 </p>
                 
             </div>
@@ -208,7 +238,7 @@
             <div class="col-full">
                 <h3 class="subhead">What We Do</h3>
                 <h1 class="display-2">
-                We’ve got everything you need to securely manage and deploy open-ended decentralised investment funds
+                Our exceptionally talented engineers are well equipped  to work on complex multi-tenant systems, SaaS and even decentralised blockchain applications within a 1-12 month contract
                 </h1>
             </div>
         </div> <!-- end section-header -->
@@ -217,129 +247,53 @@
 
 			<div class="col-block service-item" data-aos="fade-up">
                 <div class="service-icon">
-                    <i class="icon-terminal"></i>
+                    <i class="icon-link"></i>
                 </div>  
                 <div class="service-text">
-                    <h3 class="h2">Transparency</h3>
+                    <h3 class="h2">Blockchain</h3>
                     <p>
-                     A fund running on the decentralised Ethereum network is by its very own nature fully transparent
-                     to public audits. Aspects of fund management like the ongoing charge Fees (OCF), 
-                     performance fee structure, cost of liabilities, NAV calculation, asset valuation and 
-                     their addresses, shareholder's tokens can be verified openly in a permissionless environment.
+                     Ethereum virtual machine compatible systems written in Solidity, Web3 interfaces, IPFS. Experienced in building on Ethereum, xDai and Binance Smart Chain
                     </p>
                 </div>
             </div>
 
             <div class="col-block service-item" data-aos="fade-up">
                 <div class="service-icon">
-                    <i class="icon-search"></i>
+                    <i class="fa fa-server"></i>
                 </div>
                 <div class="service-text">
-                    <h3 class="h2">Trace</h3>
-                    <p>Achieve complete end-to-end traceability of assets under management.
-                      On-chain assets, fund owners and tokenholders can be verified and traced to their wallet addresses.
+                    <h3 class="h2">Server Side</h3>
+                    <p>Java, Spring boot, Spring JPA/Hibernate, Spring Security, Serverless (Lambda), J2EE EJB. AWS IAM, microservices, JBoss Drools Rule engine, MySQL, PostgreSQL
                     </p>
                 </div>
             </div>
 
             <div class="col-block service-item" data-aos="fade-up">
                 <div class="service-icon">
-                    <i class="fa fa-exchange"></i>
+                    <i class="fa fa-desktop"></i>
                 </div>
                 <div class="service-text">
-                    <h3 class="h2">Open Transferability</h3>
-                    <p>Frictionless transfer of tokens/digital shares. Custom rules can be built-in, allowing rule-based restriction
-                     on transfers as per client and fund requirements. 
+                    <h3 class="h2">Front-end</h3>
+                    <p>Angular, React and react native, TypeScript, Node JS, Modern JavaScript UI frameworks, Strong HTML/CSS skills, Websockets 
                     </p>
                 </div>
             </div>
 
             <div class="col-block service-item" data-aos="fade-up">
                 <div class="service-icon">
-                    <i class="fa fa-id-card"></i>
+                    <i class="fa fa-linux"></i>
                 </div>
                 <div class="service-text">
-                    <h3 class="h2">Investor Verification</h3>
-                    <p>In-built KYC & AML restriction, allowing only fully compliant and verified investors to purchase
-                     a fund.
+                    <h3 class="h2">DevOps</h3>
+                    <p>CICD pipelines, Docker,  CDK/CloudFormation, AWS CodePipeline,
+API Gateway, Linux
                     </p>
                 </div>
             </div>
-            
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="fa fa-cubes"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2">On-chain &amp; Off-chain assets</h3>
-                    <p>
-                    Off-chain assets are assets whose transactions occur outside of the Blockchain and as such cannot be verified 
-                    through address lookup on Blockchain network. Our platform allows fund managers to include such assets to be 
-                    evaluated and included alongside On-chain assets. Additionally, technical support can be provided for tokenisation 
-                    of off-chain assets.
-                    </p>
-                </div>
-            </div>
-            
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="fa fa-lock"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2">Immutability</h3>
-                    <p>The platform allows funds to be deployed with immutable rules for attributes like fee structure,
-                     performance fee, fund structure and any rules of engagement thereby bringing in predictability,
-                     trust and transparency.
-                    </p>
-                </div>
-            </div>
-            
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="icon-suitcase"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2">Custodial Service</h3>
-                    <p>
-                    We understand that not many of us are comfortable with Blockchain tech or digital wallets and as such our platform
-                    supports secure custody of the purchased tokens thereby allowing traditional usage like any other conventional 
-                    investment trade platform. 
-                    </p>
-                </div>
-            </div>
- 
+
         </div> <!-- end services-list -->
 
     </section> <!-- end s-services -->
-
-	    <section id='about' class="s-about">
-
-        <div class="row section-header has-bottom-sep" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead subhead--dark">Our other product under development</h3>
-            </div>
-        </div> <!-- end section-header -->
-
-        <div class="row about-desc" data-aos="fade-up">
-            <div class="col-full">
-                <p>
-                	DIACN Verified - A Blockchain based document authentication platform.
-              
-                </p>
-                <p>
-                 <div class="buttons">
-	                <a href="/diacn.html" class="btn btn--stroke-readme">
-	                        DIACN VERIFIED
-	                </a>
-                 </div>
-                </p>
-                
-            </div>
-        </div> <!-- end about-desc -->
-
-        <div class="about__line"></div>
-
-    </section> <!-- end s-about -->
 
     <!-- contact
     ================================================== -->
@@ -351,7 +305,7 @@
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
                 <h3 class="subhead">Contact Us</h3>
-                <h1 class="display-2 display-2--light">Reach out to us or just say hello</h1>
+                <h1 class="display-2 display-2--light">Let's discuss your project and make something awesome</h1>
             </div>
         </div>
 
@@ -361,21 +315,22 @@
 
                 <h3 class="h6">Send Us A Message</h3>
 
-                <form name="contactForm" 
-                method="post" action="mailto:support@esc256.com?subject=Enquiry from ESC256" enctype="text/plain" novalidate="novalidate">
+                <form name="contactForm" id="contact-form" novalidate="novalidate">
                     <fieldset>
-    
+    		     
+    		     <input type="hidden" name="contact_number">
+    		     
                     <div class="form-field">
-                        <input name="contactName" type="text" id="contactName" placeholder="Your Name" value="" minlength="2" required="" aria-required="true" class="full-width">
+                        <input name="user_name" type="text" id="contactName" placeholder="Your Name" value="" minlength="2" required="" aria-required="true" class="full-width">
                     </div>
                     <div class="form-field">
-                        <input name="contactEmail" type="email" id="contactEmail" placeholder="Your Email" value="" required="" aria-required="true" class="full-width">
+                        <input name="user_email" type="email" id="contactEmail" placeholder="Your Email" value="" required="" aria-required="true" class="full-width">
                     </div>
                     <div class="form-field">
                         <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="" class="full-width">
                     </div>
                     <div class="form-field">
-                        <textarea name="contactMessage" id="contactMessage" placeholder="Your Message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
+                        <textarea name="message" id="contactMessage" placeholder="Your Message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
                     </div>
                     <div class="form-field">
                        <input type="submit" class="full-width btn--primary" value="Submit">
@@ -405,6 +360,16 @@
 
             </div> <!-- end contact-primary -->
 
+	    <!-- The Email Response Modal Popup -->
+	    <div id="myModal" class="modal">
+
+		  <!-- Modal content -->
+		  <div class="modal-content">
+		    <span class="close">&times;</span>
+		    <p style="color: black;">Thank you for the mail. We will get back to you within 24Hrs.</p>
+		  </div>
+	    </div>
+
             <div class="contact-secondary">
                 <div class="contact-info">
 
@@ -422,13 +387,6 @@
                         <p>
                             support@esc256.com<br>
                          
-                        </p>
-                    </div>
-
-                    <div class="cinfo">
-                        <h5>Call Us At</h5>
-                        <p>
-                            Phone: +44 7466596642<br>
                         </p>
                     </div>
 				<!-- 
@@ -469,19 +427,17 @@
             <div class="col-six tab-full left footer-desc">
 
                 <div class="footer-logo"></div>
-                We are located on the British mainland in the heart of Birmingham city. We focus on building alternative 
-                and worthwhile technological solutions by leveraging Blockchain to solve your day to day business problems.
+                We are located on the British mainland in the heart of Birmingham city. We focus on building worthwhile technological solutions by leveraging the latest tech stack incl. blockchain to solve your day to day business problems.
+            
+            <p>
+                <a href="terms-conditions.html" target="_blank">Terms & Conditions</a> &nbsp;&nbsp;&nbsp;
+                <a href="privacy-policy.html" target="_blank">Privacy Policy</a>
+            </p>
+            
             </div>
                <div class="col-six tab-full right footer-desc">
                 
-                <div class="subhead" style="padding-bottom: 2em;">Other Products</div>
-                
-	             <div class="buttons">
-		                <a href="/diacn-home.html" class="btn btn--stroke-readme">
-		                  DIACN VERIFIED
-		                </a>
-	             </div>
-			</div>
+               
 		<!-- 
 		
 		  <div class="col-six tab-full right footer-subscribe">
@@ -509,7 +465,7 @@
 
             <div class="col-twelve">
                 <div class="copyright">
-                    <span>© 2020 Copyright Esc256 Blockchain Systems</span> 
+                    <span>© 2021 Copyright ESC256 is the trading name of Blocksourced Ltd</span> 
                 </div>
 
                 <div class="go-top">

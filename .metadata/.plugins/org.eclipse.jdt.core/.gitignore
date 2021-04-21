@@ -1,0 +1,4 @@
+*.dat
+/assumedExternalFilesCache
+/externalFilesCache
+/nonChainingJarsCache
